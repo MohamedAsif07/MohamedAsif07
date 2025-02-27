@@ -1,5 +1,5 @@
-<h1 align="center">Hello👋 I'm Asif</h1>
-<h3 align="center">A A passionate Android application developer & Cyber security enthusiast</h3>
+<h1 align="center">Hello👋 I'm Mohamed Asif</h1>
+<h3 align="center"> A passionately Android application developer & Cyber security enthusiast</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=mohamedasif07&label=Profile%20views&color=0e75b6&style=flat" alt="mohamedasif07" /> </p>
 
