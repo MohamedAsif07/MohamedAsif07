@@ -12,7 +12,7 @@
 
 <div align="center">
 
-```javascript
+
 class MohamedAsif {
     constructor() {
         this.name = "Mohamed Asif";
