@@ -1,129 +1,432 @@
-# <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=35&duration=2500&pause=1500&color=00D4FF&background=000000&center=true&vCenter=true&width=1000&lines=🌟+Hello+World!+I'm+Mohamed+Asif+🌟;🚀+Android+Developer+%26+Cybersecurity+Master+🛡️;💫+Welcome+to+my+Digital+Universe!+✨;🔮+Let's+Build+Something+Extraordinary!+🎯" alt="Typing SVG" />
-</div>
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Mohamed%20Asif&fontSize=80&fontAlignY=35&animation=twinkling&fontColor=gradient" />
-</div>
-
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif" width="600">
-</div>
-
-## <div align="center">🚀 About The Developer</div>
-
-<img align="right" alt="Coding" width="450" src="https://camo.githubusercontent.com/5ddf73ad3a205111cf8c686f687fc216c2946a75005718c8da5b837ad9de78c9/68747470733a2f2f7468756d62732e6766796361742e636f6d2f4576696c4e657874446576696c666973682d736d616c6c2e676966">
-
-<div align="center">
-
-### 🎭 **Who Am I?**
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed Asif - Interactive Profile</title>
+    <title>Mohamed Asif - Animated Interactive Profile</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Courier New', monospace;
-            background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+            background: linear-gradient(135deg, #0a0a0a, #1a1a1a, #0f0f23, #1a1a1a);
+            background-size: 400% 400%;
             color: #00d4ff;
             margin: 0;
             padding: 20px;
             min-height: 100vh;
+            animation: gradientShift 8s ease infinite;
+            position: relative;
+            overflow-x: hidden;
         }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: #00d4ff;
+            border-radius: 50%;
+            animation: twinkle 3s infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0; transform: scale(0.5); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+
+        .floating-particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: rgba(0, 212, 255, 0.6);
+            border-radius: 50%;
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            background: rgba(0, 0, 0, 0.8);
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+            background: rgba(0, 0, 0, 0.9);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 0 50px rgba(0, 212, 255, 0.4);
+            border: 2px solid rgba(0, 212, 255, 0.3);
+            position: relative;
+            backdrop-filter: blur(10px);
+            animation: containerPulse 4s ease-in-out infinite;
         }
+
+        @keyframes containerPulse {
+            0%, 100% { box-shadow: 0 0 50px rgba(0, 212, 255, 0.4); }
+            50% { box-shadow: 0 0 80px rgba(0, 212, 255, 0.6); }
+        }
+
         .header {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            position: relative;
         }
+
         .header h1 {
-            font-size: 2.5em;
+            font-size: 3em;
             margin: 0;
-            text-shadow: 0 0 10px #00d4ff;
-            animation: glow 2s ease-in-out infinite alternate;
+            background: linear-gradient(45deg, #00d4ff, #ff6b35, #00ff9f, #ff3366);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rainbowText 3s ease-in-out infinite, bounce 2s ease-in-out infinite;
         }
-        @keyframes glow {
-            from { text-shadow: 0 0 5px #00d4ff; }
-            to { text-shadow: 0 0 20px #00d4ff, 0 0 30px #00d4ff; }
+
+        @keyframes rainbowText {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
         }
-        .console {
-            background: #000;
-            border: 2px solid #00d4ff;
-            border-radius: 10px;
-            padding: 20px;
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .typewriter {
+            font-size: 1.2em;
             margin: 20px 0;
+            min-height: 30px;
+            border-right: 2px solid #00d4ff;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% { border-right-color: transparent; }
+            51%, 100% { border-right-color: #00d4ff; }
+        }
+
+        .console {
+            background: linear-gradient(135deg, #000, #111);
+            border: 3px solid #00d4ff;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
             font-family: 'Courier New', monospace;
             overflow-x: auto;
+            position: relative;
+            animation: consoleGlow 3s ease-in-out infinite;
         }
+
+        @keyframes consoleGlow {
+            0%, 100% { 
+                border-color: #00d4ff;
+                box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+            }
+            50% { 
+                border-color: #ff6b35;
+                box-shadow: 0 0 30px rgba(255, 107, 53, 0.7);
+            }
+        }
+
+        .console::before {
+            content: "●●●";
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: #ff6b35;
+            animation: consoleLights 2s ease-in-out infinite;
+        }
+
+        @keyframes consoleLights {
+            0%, 100% { color: #ff6b35; }
+            50% { color: #00ff9f; }
+        }
+
         .output {
             color: #00ff00;
             white-space: pre-wrap;
-            line-height: 1.4;
+            line-height: 1.6;
+            animation: textGlow 2s ease-in-out infinite alternate;
         }
+
+        @keyframes textGlow {
+            from { text-shadow: 0 0 5px #00ff00; }
+            to { text-shadow: 0 0 15px #00ff00, 0 0 25px #00ff00; }
+        }
+
         .button {
-            background: linear-gradient(45deg, #00d4ff, #0099cc);
+            background: linear-gradient(45deg, #00d4ff, #0099cc, #ff6b35, #ff3366);
+            background-size: 300% 300%;
             border: none;
-            border-radius: 8px;
+            border-radius: 12px;
             color: white;
-            padding: 12px 24px;
-            margin: 10px;
+            padding: 15px 30px;
+            margin: 12px;
             cursor: pointer;
             font-size: 16px;
             font-weight: bold;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 6px 20px rgba(0, 212, 255, 0.4);
+            position: relative;
+            overflow: hidden;
+            animation: buttonShimmer 3s ease infinite;
         }
+
+        @keyframes buttonShimmer {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s;
+        }
+
         .button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 212, 255, 0.5);
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.7);
+            animation-play-state: paused;
         }
+
+        .button:hover::before {
+            left: 100%;
+        }
+
+        .button:active {
+            transform: translateY(-2px) scale(1.02);
+        }
+
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 20px 0;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
         }
+
         .card {
-            background: rgba(0, 212, 255, 0.1);
-            border: 1px solid #00d4ff;
-            border-radius: 10px;
-            padding: 20px;
-            transition: all 0.3s ease;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(255, 107, 53, 0.1));
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            border-radius: 15px;
+            padding: 25px;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
         }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, #00d4ff, #ff6b35, #00ff9f, #ff3366);
+            margin: -2px;
+            border-radius: inherit;
+            z-index: -1;
+            animation: borderRotate 4s linear infinite;
+        }
+
+        @keyframes borderRotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
         .card:hover {
-            background: rgba(0, 212, 255, 0.2);
-            transform: translateY(-5px);
+            transform: translateY(-10px) rotateX(5deg);
+            box-shadow: 0 15px 40px rgba(0, 212, 255, 0.5);
         }
+
         .card h3 {
             margin-top: 0;
             color: #00d4ff;
+            font-size: 1.4em;
+            animation: titlePulse 2s ease-in-out infinite;
         }
+
+        @keyframes titlePulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+
         .tech-tag {
             display: inline-block;
-            background: rgba(0, 212, 255, 0.2);
+            background: linear-gradient(45deg, rgba(0, 212, 255, 0.3), rgba(255, 107, 53, 0.3));
             color: #00d4ff;
-            padding: 4px 8px;
-            margin: 2px;
-            border-radius: 4px;
+            padding: 6px 12px;
+            margin: 3px;
+            border-radius: 20px;
             font-size: 12px;
-            border: 1px solid rgba(0, 212, 255, 0.3);
+            border: 1px solid rgba(0, 212, 255, 0.5);
+            transition: all 0.3s ease;
+            animation: tagFloat 3s ease-in-out infinite;
+        }
+
+        .tech-tag:hover {
+            background: linear-gradient(45deg, rgba(0, 212, 255, 0.6), rgba(255, 107, 53, 0.6));
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(0, 212, 255, 0.4);
+        }
+
+        @keyframes tagFloat {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-2px); }
+        }
+
+        .loading-bar {
+            width: 100%;
+            height: 4px;
+            background: rgba(0, 212, 255, 0.2);
+            border-radius: 2px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .loading-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #00d4ff, #ff6b35, #00ff9f);
+            background-size: 200% 100%;
+            animation: loadingAnimation 2s ease-in-out infinite;
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+
+        @keyframes loadingAnimation {
+            0%, 100% { background-position: 0% 0%; }
+            50% { background-position: 100% 0%; }
+        }
+
+        .matrix-rain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -2;
+            opacity: 0.1;
+        }
+
+        .status-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: #00ff00;
+            border-radius: 50%;
+            animation: statusBlink 1.5s ease-in-out infinite;
+            margin-right: 8px;
+        }
+
+        @keyframes statusBlink {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.3; transform: scale(0.8); }
+        }
+
+        .hologram {
+            animation: hologramEffect 3s ease-in-out infinite;
+        }
+
+        @keyframes hologramEffect {
+            0%, 100% { 
+                text-shadow: 0 0 5px #00d4ff; 
+                opacity: 1;
+            }
+            50% { 
+                text-shadow: 0 0 20px #00d4ff, 0 0 30px #00d4ff; 
+                opacity: 0.8;
+            }
+        }
+
+        .cyber-grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 212, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 212, 255, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+            pointer-events: none;
+            z-index: -3;
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes gridMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 20px; }
+            .header h1 { font-size: 2em; }
+            .grid { grid-template-columns: 1fr; }
+            .button { padding: 12px 20px; margin: 8px; }
         }
     </style>
 </head>
 <body>
+    <div class="cyber-grid"></div>
+    <div class="stars" id="stars"></div>
+    <div class="floating-particles" id="particles"></div>
+    <canvas class="matrix-rain" id="matrixCanvas"></canvas>
+
     <div class="container">
         <div class="header">
-            <h1>🚀 Mohamed Asif - Interactive Profile 🛡️</h1>
-            <p>Click the buttons below to explore my digital universe!</p>
+            <h1 class="hologram">🚀 Mohamed Asif 🛡️</h1>
+            <div class="typewriter" id="typewriter"></div>
+            <div class="loading-bar">
+                <div class="loading-progress" id="loadingProgress"></div>
+            </div>
         </div>
 
         <div style="text-align: center;">
@@ -133,10 +436,13 @@
             <button class="button" onclick="showTechnologies()">💻 Tech Arsenal</button>
             <button class="button" onclick="showLearning()">📚 Learning Path</button>
             <button class="button" onclick="showFunFacts()">🎭 Personality</button>
+            <button class="button" onclick="hackTheMatrix()">🔮 Hack Matrix</button>
         </div>
 
         <div class="console" id="console">
-            <div class="output" id="output">Welcome! Click any button above to interact with the profile system...</div>
+            <div class="output" id="output">
+                <span class="status-indicator"></span>System initializing... Welcome to the digital universe!
+            </div>
         </div>
 
         <div id="dynamicContent"></div>
@@ -204,6 +510,14 @@
                 ];
                 
                 this.motto = "💫 Code with purpose, secure with passion, innovate with impact!";
+                this.hackMessages = [
+                    "🔮 Accessing mainframe...",
+                    "🛡️ Bypassing security protocols...",
+                    "💾 Downloading universe.exe...",
+                    "🌐 Connecting to the Matrix...",
+                    "⚡ Overclocking reality.dll...",
+                    "🎯 Reality hacked successfully!"
+                ];
             }
             
             getCurrentStatus() {
@@ -237,16 +551,69 @@
 
         // Initialize the profile
         const mohamed = new MohamedAsif();
+        let typewriterIndex = 0;
+        let currentText = "";
+        let isDeleting = false;
+
+        const typewriterTexts = [
+            "Interactive Developer Profile Loading...",
+            "Android Developer & Cybersecurity Expert",
+            "Building Secure Digital Solutions",
+            "Innovating the Future of Mobile Security"
+        ];
+
+        function typeWriter() {
+            const fullText = typewriterTexts[typewriterIndex];
+            
+            if (isDeleting) {
+                currentText = fullText.substring(0, currentText.length - 1);
+            } else {
+                currentText = fullText.substring(0, currentText.length + 1);
+            }
+            
+            document.getElementById('typewriter').textContent = currentText;
+            
+            let typeSpeed = 100;
+            
+            if (isDeleting) {
+                typeSpeed = 50;
+            }
+            
+            if (!isDeleting && currentText === fullText) {
+                typeSpeed = 2000;
+                isDeleting = true;
+            } else if (isDeleting && currentText === '') {
+                isDeleting = false;
+                typewriterIndex = (typewriterIndex + 1) % typewriterTexts.length;
+                typeSpeed = 500;
+            }
+            
+            setTimeout(typeWriter, typeSpeed);
+        }
 
         function updateOutput(content) {
-            document.getElementById('output').textContent = content;
+            document.getElementById('output').innerHTML = `<span class="status-indicator"></span>${content}`;
         }
 
         function updateDynamicContent(content) {
             document.getElementById('dynamicContent').innerHTML = content;
         }
 
+        function animateLoadingBar(targetWidth) {
+            const loadingProgress = document.getElementById('loadingProgress');
+            let width = 0;
+            const interval = setInterval(() => {
+                if (width >= targetWidth) {
+                    clearInterval(interval);
+                } else {
+                    width++;
+                    loadingProgress.style.width = width + '%';
+                }
+            }, 20);
+        }
+
         function initializeProfile() {
+            animateLoadingBar(100);
             updateOutput(mohamed.executeWelcomeSequence());
             updateDynamicContent(`
                 <div class="card">
@@ -263,18 +630,20 @@
             const status = mohamed.getCurrentStatus();
             let output = "📊 CURRENT STATUS REPORT:\n\n";
             for (const [emoji, description] of Object.entries(status)) {
-                output += `${emoji} ${description}\n`;
+                output += `${emoji} ${description}\n\n`;
             }
             updateOutput(output);
+            animateLoadingBar(75);
         }
 
         function showContactInfo() {
             const contact = mohamed.getContactPortal();
             let output = "📞 CONTACT INFORMATION:\n\n";
             for (const [platform, info] of Object.entries(contact)) {
-                output += `${platform}: ${info}\n`;
+                output += `${platform}: ${info}\n\n`;
             }
             updateOutput(output);
+            animateLoadingBar(60);
         }
 
         function showTechnologies() {
@@ -296,15 +665,17 @@
             content += '</div>';
             
             updateDynamicContent(content);
-            updateOutput("💻 Tech Arsenal loaded! Check the cards below.");
+            updateOutput("💻 Tech Arsenal loaded! Check the animated cards below.");
+            animateLoadingBar(90);
         }
 
         function showLearning() {
             let output = "📚 CURRENT LEARNING PATH:\n\n";
             mohamed.currentlyLearning.forEach((item, index) => {
-                output += `${index + 1}. ${item}\n`;
+                output += `${index + 1}. ${item}\n\n`;
             });
             updateOutput(output);
+            animateLoadingBar(65);
         }
 
         function showFunFacts() {
@@ -313,222 +684,106 @@
                 output += `${index + 1}. ${fact}\n\n`;
             });
             updateOutput(output);
+            animateLoadingBar(80);
         }
 
-        // Auto-initialize with a welcome message
-        setTimeout(() => {
-            initializeProfile();
-        }, 1000);
+        function hackTheMatrix() {
+            let messageIndex = 0;
+            const hackInterval = setInterval(() => {
+                if (messageIndex < mohamed.hackMessages.length) {
+                    updateOutput(mohamed.hackMessages[messageIndex]);
+                    messageIndex++;
+                } else {
+                    clearInterval(hackInterval);
+                    createMatrixEffect();
+                }
+            }, 1000);
+            animateLoadingBar(100);
+        }
+
+        function createMatrixEffect() {
+            const canvas = document.getElementById('matrixCanvas');
+            const ctx = canvas.getContext('2d');
+            
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            
+            const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()';
+            const columns = Math.floor(canvas.width / 20);
+            const drops = [];
+            
+            for (let i = 0; i < columns; i++) {
+                drops[i] = 1;
+            }
+            
+            function drawMatrix() {
+                ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                
+                ctx.fillStyle = '#00d4ff';
+                ctx.font = '16px monospace';
+                
+                for (let i = 0; i < drops.length; i++) {
+                    const char = characters[Math.floor(Math.random() * characters.length)];
+                    ctx.fillText(char, i * 20, drops[i] * 20);
+                    
+                    if (drops[i] * 20 > canvas.height && Math.random() > 0.975) {
+                        drops[i] = 0;
+                    }
+                    drops[i]++;
+                }
+            }
+            
+            const matrixInterval = setInterval(drawMatrix, 100);
+            
+            setTimeout(() => {
+                clearInterval(matrixInterval);
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                updateOutput("🎯 Matrix successfully hacked! Reality.exe has been modified.");
+            }, 5000);
+        }
+
+        function createStars() {
+            const starsContainer = document.getElementById('stars');
+            for (let i = 0; i < 100; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 3 + 's';
+                starsContainer.appendChild(star);
+            }
+        }
+
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = (Math.random() * 10 + 15) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Initialize everything
+        document.addEventListener('DOMContentLoaded', () => {
+            createStars();
+            createParticles();
+            typeWriter();
+            
+            setTimeout(() => {
+                initializeProfile();
+            }, 2000);
+        });
+
+        // Resize canvas when window resizes
+        window.addEventListener('resize', () => {
+            const canvas = document.getElementById('matrixCanvas');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
     </script>
 </body>
 </html>
-
-</div>
-
-<br clear="both">
-
-## <div align="center">🔥 Performance Metrics & Achievements</div>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=mohamedasif07&theme=onestar&no-frame=true&no-bg=false&margin-w=4&column=7" alt="GitHub Trophies"/>
-</div>
-
-<div align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=mohamedasif07&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0D1117&title_color=00D4FF&icon_color=00D4FF&text_color=FFFFFF" alt="GitHub Stats"/>
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohamedasif07&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D4FF&text_color=FFFFFF" alt="Top Languages"/>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mohamedasif07&theme=tokyonight&hide_border=true&background=0D1117&stroke=00D4FF&ring=00D4FF&fire=FF6B35&currStreakLabel=00D4FF" alt="GitHub Streak"/>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mohamedasif07&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=00D4FF&line=00D4FF&point=FF6B35&area=true" alt="Activity Graph"/>
-</div>
-
-## <div align="center">💻 Technology Stack & Arsenal</div>
-
-<div align="center">
-
-### 🚀 **Mobile Development Mastery**
-<div align="center">
-
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white&labelColor=black)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white&labelColor=black)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white&labelColor=black)
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white&labelColor=black)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white&labelColor=black)
-![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white&labelColor=black)
-
-</div>
-
-### 🛡️ **Cybersecurity & Penetration Testing**
-<div align="center">
-
-![Kali Linux](https://img.shields.io/badge/Kali%20Linux-268BEE?style=for-the-badge&logo=kalilinux&logoColor=white&labelColor=black)
-![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&logoColor=white&labelColor=black)
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white&labelColor=black)
-![Burp Suite](https://img.shields.io/badge/Burp%20Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white&labelColor=black)
-![OWASP](https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white&labelColor=black)
-![Nmap](https://img.shields.io/badge/Nmap-0E83CD?style=for-the-badge&logo=nmap&logoColor=white&labelColor=black)
-
-</div>
-
-### 🌐 **Backend Development & APIs**
-<div align="center">
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=black)
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white&labelColor=black)
-![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white&labelColor=black)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white&labelColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white&labelColor=black)
-
-</div>
-
-### ☁️ **Cloud & DevOps Excellence**
-<div align="center">
-
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white&labelColor=black)
-![Google Cloud](https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white&labelColor=black)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white&labelColor=black)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326ce5?style=for-the-badge&logo=kubernetes&logoColor=white&labelColor=black)
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white&labelColor=black)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white&labelColor=black)
-
-</div>
-
-### 🗄️ **Database Technologies**
-<div align="center">
-
-![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white&labelColor=black)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white&labelColor=black)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white&labelColor=black)
-![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white&labelColor=black)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white&labelColor=black)
-
-</div>
-
-### 🛠️ **Development Tools & Environment**
-<div align="center">
-
-![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white&labelColor=black)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white&labelColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white&labelColor=black)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white&labelColor=black)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white&labelColor=black)
-
-</div>
-
-</div>
-
-## <div align="center">🎯 Current Objectives & Roadmap</div>
-
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="150">
-</div>
-
-<div align="center">
-
-### 🔬 **Research & Development Focus**
-
-```yaml
-🚀 Active Projects:
-  Mobile Security:
-    - 📱 Advanced Android Security Framework
-    - 🔐 End-to-End Encrypted Messaging Platform
-    - 🛡️ Mobile Threat Detection System
-  
-  Cybersecurity Tools:
-    - 🕵️ Custom Penetration Testing Suite
-    - 🔍 Vulnerability Scanner for Mobile Apps
-    - 🛠️ Automated Security Assessment Tools
-  
-  Open Source Contributions:
-    - 🌟 Security-focused Android Libraries
-    - 🔧 Developer Security Tools
-    - 📚 Educational Cybersecurity Content
-
-📖 Current Learning Path:
-  - 🧠 Machine Learning in Cybersecurity
-  - 🌐 Web3 & Blockchain Security
-  - ☁️ Zero Trust Architecture
-  - 🤖 AI-Powered Threat Detection
-  - 🔒 Advanced Cryptography
-```
-
-</div>
-
-## <div align="center">📊 Activity Heatmap & Insights</div>
-
-<div align="center">
-  <img src="https://ghchart.rshah.org/00D4FF/mohamedasif07" alt="GitHub Contribution Chart" width="100%">
-</div>
-
-## <div align="center">🤝 Let's Connect & Collaborate</div>
-
-<div align="center">
-  
-<table>
-<tr>
-<td align="center" width="200">
-
-### 📧 **Email**
-[mohamedasifappdev@gmail.com](mailto:mohamedasifappdev@gmail.com)
-
-</td>
-<td align="center" width="200">
-
-### 🐙 **GitHub**
-[@mohamedasif07](https://github.com/mohamedasif07)
-
-</td>
-<td align="center" width="200">
-
-### 🌐 **Portfolio**
-🚧 Coming Soon...
-
-</td>
-</tr>
-</table>
-
-![Profile Views](https://komarev.com/ghpvc/?username=mohamedasif07&label=Profile%20Views&color=00D4FF&style=for-the-badge&logo=github)
-
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
-
-</div>
-
-## <div align="center">💡 Innovation Philosophy</div>
-
-<div align="center">
-
-> ### _"In the realm of code, security isn't just a feature—it's the foundation upon which trust is built."_
-
-**🎯 Mission Statement:**
-*Bridging the gap between innovative mobile development and robust cybersecurity practices to create a safer digital ecosystem for everyone.*
-
-</div>
-
-## <div align="center">☕ Support the Journey</div>
-
-<div align="center">
-
-*If you find my work valuable and want to support my open-source contributions and security research:*
-
-[![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/MohamedAsif07)
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/mohamedasif07)
-
-</div>
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=footer&animation=twinkling" />
-</div>
-
----
-
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=24&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&width=800&lines=Thanks+for+exploring+my+digital+universe!+🚀;Let's+collaborate+and+build+the+future!+💫;Keep+coding%2C+keep+securing%2C+keep+innovating!+✨;The+journey+of+a+thousand+commits+begins+now!+🌟" alt="Typing SVG" />
-</div>
-
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif" width="500">
-</div>
