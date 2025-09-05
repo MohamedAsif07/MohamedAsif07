@@ -18,128 +18,310 @@
 
 ### 🎭 **Who Am I?**
 
-```javascript
-class MohamedAsif {
-    constructor() {
-        this.profile = {
-            name: "Mohamed Asif",
-            role: "🚀 Android Developer & 🛡️ Cybersecurity Enthusiast",
-            location: "🌍 Earth • 🏙️ Digital Realm",
-            pronouns: ["He", "Him"],
-            status: "💫 Building the future, one app at a time"
-        };
-        
-        this.currentMission = [
-            "🔐 Crafting Secure Android Applications",
-            "🛡️ Developing Advanced Cybersecurity Tools", 
-            "🌟 Contributing to Open Source Revolution",
-            "🎯 Mentoring Next-Gen Developers"
-        ];
-        
-        this.codeArsenal = {
-            mobile: {
-                "📱 Native Android": ["☕ Java", "🟣 Kotlin", "🎨 XML", "🚀 Jetpack Compose"],
-                "🦋 Cross-Platform": ["🎯 Dart", "💙 Flutter", "📐 Material Design"]
-            },
-            
-            backend: {
-                "⚡ Languages": ["🐍 Python", "☕ Java", "⚙️ C/C++"],
-                "🏗️ Frameworks": ["🌿 Spring Boot", "🔥 Django", "⚡ FastAPI", "🌪️ Flask"],
-                "📦 Build Tools": ["🐘 Gradle", "📋 Maven", "🔧 CMake"]
-            },
-            
-            cloudNative: {
-                "☁️ Platforms": ["🔶 AWS", "🔵 Google Cloud", "🟦 Azure"],
-                "🐳 Containerization": ["🐋 Docker", "☸️ Kubernetes", "🔄 Docker Compose"],
-                "🚀 CI/CD": ["🏗️ Jenkins", "⚙️ GitHub Actions", "🔄 GitLab CI"]
-            },
-            
-            cybersecurity: {
-                "🛡️ Offensive": ["🐉 Kali Linux", "💥 Metasploit", "🔍 Nmap", "🦈 Wireshark"],
-                "🔒 Defensive": ["🛡️ OWASP", "🔐 Burp Suite", "🕵️ Penetration Testing"],
-                "🎯 Specialization": ["📱 Mobile Security", "🌐 Web App Security", "🔗 API Security"]
-            },
-            
-            databases: {
-                "🔥 NoSQL": ["🍃 MongoDB", "🔥 Firebase", "📊 DynamoDB"],
-                "🗄️ SQL": ["🐬 MySQL", "🐘 PostgreSQL", "💎 SQLite"],
-                "⚡ Cache": ["🚀 Redis", "⚡ Memcached"]
-            },
-            
-            tools: {
-                "💻 IDEs": ["🤖 Android Studio", "💙 VS Code", "💡 IntelliJ IDEA"],
-                "🧪 Testing": ["🧪 Postman", "🔍 Selenium", "✅ JUnit", "🎯 Mockito"],
-                "🎨 Design": ["🎨 Figma", "✨ Adobe XD", "🖌️ Sketch"]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Asif - Interactive Profile</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+            color: #00d4ff;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 0 0 10px #00d4ff;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 5px #00d4ff; }
+            to { text-shadow: 0 0 20px #00d4ff, 0 0 30px #00d4ff; }
+        }
+        .console {
+            background: #000;
+            border: 2px solid #00d4ff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+        .output {
+            color: #00ff00;
+            white-space: pre-wrap;
+            line-height: 1.4;
+        }
+        .button {
+            background: linear-gradient(45deg, #00d4ff, #0099cc);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            padding: 12px 24px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 212, 255, 0.5);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .card {
+            background: rgba(0, 212, 255, 0.1);
+            border: 1px solid #00d4ff;
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            background: rgba(0, 212, 255, 0.2);
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #00d4ff;
+        }
+        .tech-tag {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.2);
+            color: #00d4ff;
+            padding: 4px 8px;
+            margin: 2px;
+            border-radius: 4px;
+            font-size: 12px;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Mohamed Asif - Interactive Profile 🛡️</h1>
+            <p>Click the buttons below to explore my digital universe!</p>
+        </div>
+
+        <div style="text-align: center;">
+            <button class="button" onclick="initializeProfile()">🌟 Initialize Profile</button>
+            <button class="button" onclick="showCurrentStatus()">📊 Current Status</button>
+            <button class="button" onclick="showContactInfo()">📞 Contact Portal</button>
+            <button class="button" onclick="showTechnologies()">💻 Tech Arsenal</button>
+            <button class="button" onclick="showLearning()">📚 Learning Path</button>
+            <button class="button" onclick="showFunFacts()">🎭 Personality</button>
+        </div>
+
+        <div class="console" id="console">
+            <div class="output" id="output">Welcome! Click any button above to interact with the profile system...</div>
+        </div>
+
+        <div id="dynamicContent"></div>
+    </div>
+
+    <script>
+        class MohamedAsif {
+            constructor() {
+                this.profile = {
+                    name: "Mohamed Asif",
+                    role: "🚀 Android Developer & 🛡️ Cybersecurity Enthusiast",
+                    location: "🌍 Earth • 🏙️ Digital Realm",
+                    pronouns: ["He", "Him"],
+                    status: "💫 Building the future, one app at a time"
+                };
+                
+                this.currentMission = [
+                    "🔐 Crafting Secure Android Applications",
+                    "🛡️ Developing Advanced Cybersecurity Tools", 
+                    "🌟 Contributing to Open Source Revolution",
+                    "🎯 Mentoring Next-Gen Developers"
+                ];
+                
+                this.codeArsenal = {
+                    mobile: {
+                        "📱 Native Android": ["☕ Java", "🟣 Kotlin", "🎨 XML", "🚀 Jetpack Compose"],
+                        "🦋 Cross-Platform": ["🎯 Dart", "💙 Flutter", "📐 Material Design"]
+                    },
+                    
+                    backend: {
+                        "⚡ Languages": ["🐍 Python", "☕ Java", "⚙️ C/C++"],
+                        "🏗️ Frameworks": ["🌿 Spring Boot", "🔥 Django", "⚡ FastAPI", "🌪️ Flask"],
+                        "📦 Build Tools": ["🐘 Gradle", "📋 Maven", "🔧 CMake"]
+                    },
+                    
+                    cloudNative: {
+                        "☁️ Platforms": ["🔶 AWS", "🔵 Google Cloud", "🟦 Azure"],
+                        "🐳 Containerization": ["🐋 Docker", "☸️ Kubernetes", "🔄 Docker Compose"],
+                        "🚀 CI/CD": ["🏗️ Jenkins", "⚙️ GitHub Actions", "🔄 GitLab CI"]
+                    },
+                    
+                    cybersecurity: {
+                        "🛡️ Offensive": ["🐉 Kali Linux", "💥 Metasploit", "🔍 Nmap", "🦈 Wireshark"],
+                        "🔒 Defensive": ["🛡️ OWASP", "🔐 Burp Suite", "🕵️ Penetration Testing"],
+                        "🎯 Specialization": ["📱 Mobile Security", "🌐 Web App Security", "🔗 API Security"]
+                    }
+                };
+                
+                this.currentlyLearning = [
+                    "🤖 Advanced Android Architecture (MVVM, Clean Architecture)",
+                    "🔥 Firebase ML Kit & Advanced Features",
+                    "🛠️ Custom Kali Linux Tools Development",
+                    "☁️ Cloud-Native Security & Zero Trust Architecture",
+                    "🧠 Machine Learning for Cybersecurity",
+                    "🌐 Web3 & Blockchain Security"
+                ];
+                
+                this.personalityCore = [
+                    "🕵️ I debug with the precision of Sherlock Holmes",
+                    "🎯 I hunt vulnerabilities like a digital bounty hunter",
+                    "☕ Coffee is the fuel that powers my midnight coding sessions",
+                    "🌙 My best code emerges when the world sleeps",
+                    "🚀 I believe secure code isn't just good practice—it's art",
+                    "💡 Every bug is a puzzle waiting to be solved"
+                ];
+                
+                this.motto = "💫 Code with purpose, secure with passion, innovate with impact!";
             }
-        };
-        
-        this.currentLearning = [
-            "🤖 Advanced Android Architecture (MVVM, Clean Architecture)",
-            "🔥 Firebase ML Kit & Advanced Features",
-            "🛠️ Custom Kali Linux Tools Development",
-            "☁️ Cloud-Native Security & Zero Trust Architecture",
-            "🧠 Machine Learning for Cybersecurity",
-            "🌐 Web3 & Blockchain Security"
-        ];
-        
-        this.achievements2024 = [
-            "📱 Launch 5 Production Android Apps",
-            "🏆 Contribute to 75+ Open Source Projects",
-            "🎓 Earn Advanced Security Certifications",
-            "📚 Master Kubernetes & Service Mesh",
-            "🎯 Mentor 20+ Junior Developers",
-            "💡 Publish Security Research Papers"
-        ];
-        
-        this.personalityCore = [
-            "🕵️ I debug with the precision of Sherlock Holmes",
-            "🎯 I hunt vulnerabilities like a digital bounty hunter",
-            "☕ Coffee is the fuel that powers my midnight coding sessions",
-            "🌙 My best code emerges when the world sleeps",
-            "🚀 I believe secure code isn't just good practice—it's art",
-            "💡 Every bug is a puzzle waiting to be solved"
-        ];
-        
-        this.motto = "💫 Code with purpose, secure with passion, innovate with impact!";
-    }
-    
-    getCurrentStatus() {
-        const status = {
-            🚀: "Building next-generation secure mobile applications",
-            🛡️: "Researching advanced cybersecurity methodologies", 
-            💼: "Open for exciting collaboration opportunities",
-            📚: "Always learning, always evolving",
-            🎯: "Focused on making the digital world safer"
-        };
-        
-        return status;
-    }
-    
-    getContactPortal() {
-        return {
-            "📧 Email": "mohamedasifappdev@gmail.com",
-            "🐙 GitHub": "@mohamedasif07",
-            "🌐 Portfolio": "🚧 Crafting something extraordinary...",
-            "⏰ Timezone": "UTC+5:30 (IST)",
-            "💬 Status": "Always ready to discuss innovative projects!"
-        };
-    }
-    
-    executeWelcomeSequence() {
-        console.log("🌟 ================================ 🌟");
-        console.log("   Welcome to Mohamed Asif's Digital Universe!");
-        console.log("🌟 ================================ 🌟");
-        console.log(this.getCurrentStatus());
-        console.log("✨ Let's build something extraordinary together! ✨");
-    }
-}
+            
+            getCurrentStatus() {
+                return {
+                    "🚀": "Building next-generation secure mobile applications",
+                    "🛡️": "Researching advanced cybersecurity methodologies", 
+                    "💼": "Open for exciting collaboration opportunities",
+                    "📚": "Always learning, always evolving",
+                    "🎯": "Focused on making the digital world safer"
+                };
+            }
+            
+            getContactPortal() {
+                return {
+                    "📧 Email": "mohamedasifappdev@gmail.com",
+                    "🐙 GitHub": "@mohamedasif07",
+                    "🌐 Portfolio": "🚧 Crafting something extraordinary...",
+                    "⏰ Timezone": "UTC+5:30 (IST)",
+                    "💬 Status": "Always ready to discuss innovative projects!"
+                };
+            }
+            
+            executeWelcomeSequence() {
+                return `🌟 ================================ 🌟
+   Welcome to Mohamed Asif's Digital Universe!
+🌟 ================================ 🌟
 
-// 🚀 Initialize the Digital Architect
-const mohamed = new MohamedAsif();
-mohamed.executeWelcomeSequence();
+✨ Let's build something extraordinary together! ✨`;
+            }
+        }
 
-// 💫 Ready to revolutionize the digital world!
-```
+        // Initialize the profile
+        const mohamed = new MohamedAsif();
+
+        function updateOutput(content) {
+            document.getElementById('output').textContent = content;
+        }
+
+        function updateDynamicContent(content) {
+            document.getElementById('dynamicContent').innerHTML = content;
+        }
+
+        function initializeProfile() {
+            updateOutput(mohamed.executeWelcomeSequence());
+            updateDynamicContent(`
+                <div class="card">
+                    <h3>👨‍💻 Profile Overview</h3>
+                    <p><strong>Name:</strong> ${mohamed.profile.name}</p>
+                    <p><strong>Role:</strong> ${mohamed.profile.role}</p>
+                    <p><strong>Location:</strong> ${mohamed.profile.location}</p>
+                    <p><strong>Motto:</strong> ${mohamed.motto}</p>
+                </div>
+            `);
+        }
+
+        function showCurrentStatus() {
+            const status = mohamed.getCurrentStatus();
+            let output = "📊 CURRENT STATUS REPORT:\n\n";
+            for (const [emoji, description] of Object.entries(status)) {
+                output += `${emoji} ${description}\n`;
+            }
+            updateOutput(output);
+        }
+
+        function showContactInfo() {
+            const contact = mohamed.getContactPortal();
+            let output = "📞 CONTACT INFORMATION:\n\n";
+            for (const [platform, info] of Object.entries(contact)) {
+                output += `${platform}: ${info}\n`;
+            }
+            updateOutput(output);
+        }
+
+        function showTechnologies() {
+            let content = '<div class="grid">';
+            
+            for (const [category, technologies] of Object.entries(mohamed.codeArsenal)) {
+                content += `<div class="card">`;
+                content += `<h3>${category.charAt(0).toUpperCase() + category.slice(1)}</h3>`;
+                
+                for (const [subcategory, techs] of Object.entries(technologies)) {
+                    content += `<p><strong>${subcategory}:</strong><br>`;
+                    techs.forEach(tech => {
+                        content += `<span class="tech-tag">${tech}</span>`;
+                    });
+                    content += `</p>`;
+                }
+                content += `</div>`;
+            }
+            content += '</div>';
+            
+            updateDynamicContent(content);
+            updateOutput("💻 Tech Arsenal loaded! Check the cards below.");
+        }
+
+        function showLearning() {
+            let output = "📚 CURRENT LEARNING PATH:\n\n";
+            mohamed.currentlyLearning.forEach((item, index) => {
+                output += `${index + 1}. ${item}\n`;
+            });
+            updateOutput(output);
+        }
+
+        function showFunFacts() {
+            let output = "🎭 PERSONALITY CORE TRAITS:\n\n";
+            mohamed.personalityCore.forEach((fact, index) => {
+                output += `${index + 1}. ${fact}\n\n`;
+            });
+            updateOutput(output);
+        }
+
+        // Auto-initialize with a welcome message
+        setTimeout(() => {
+            initializeProfile();
+        }, 1000);
+    </script>
+</body>
+</html>
 
 </div>
 
