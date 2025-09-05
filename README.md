@@ -10,29 +10,108 @@
 
 <img align="right" alt="Coding" width="400" src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif">
 
-```typescript
-const mohamed = {
-    pronouns: "He" | "Him",
-    code: ["Java", "Kotlin", "Python", "C", "Dart"],
-    askMeAbout: ["Android Dev", "Cybersecurity", "Tech", "Firebase"],
-    technologies: {
-        mobile: {
-            android: ["Java", "Kotlin"],
-            crossPlatform: ["Flutter", "Dart"]
-        },
-        backEnd: {
-            java: ["Spring Boot"],
-            python: ["Django", "Flask"],
-            databases: ["MongoDB", "MySQL", "PostgreSQL"]
-        },
-        devOps: ["AWS", "Docker", "Jenkins", "Kubernetes"],
-        tools: ["Git", "Postman", "Figma"],
-        cybersecurity: ["Kali Linux", "Penetration Testing"]
-    },
-    currentFocus: "Building secure Android applications",
-    funFact: "I debug code and security vulnerabilities with equal passion!"
-};
+<div align="center">
+
+```javascript
+class MohamedAsif {
+    constructor() {
+        this.name = "Mohamed Asif";
+        this.role = "Android Developer & Cybersecurity Enthusiast";
+        this.location = "🌍 Earth";
+        this.pronouns = ["He", "Him"];
+        
+        this.workingOn = [
+            "🔐 Secure Android Applications",
+            "🛡️ Cybersecurity Tools",
+            "🚀 Open Source Projects"
+        ];
+        
+        this.languages = {
+            mobile: ["☕ Java", "🟣 Kotlin", "🎯 Dart"],
+            backend: ["🐍 Python", "⚙️ C"],
+            scripting: ["💻 Bash", "🔧 Shell"]
+        };
+        
+        this.technologies = {
+            mobile: {
+                "📱 Android": ["Java", "Kotlin", "XML", "Jetpack Compose"],
+                "🦋 Flutter": ["Dart", "Material Design", "Cupertino"]
+            },
+            
+            backend: {
+                "☕ Java": ["Spring Boot", "Maven", "Gradle"],
+                "🐍 Python": ["Django", "Flask", "FastAPI"],
+                "🗄️ Databases": ["Firebase", "MongoDB", "MySQL", "PostgreSQL"]
+            },
+            
+            cloud_devops: {
+                "☁️ Cloud": ["AWS", "Google Cloud Platform"],
+                "🐳 Containers": ["Docker", "Kubernetes"],
+                "🔄 CI/CD": ["Jenkins", "GitHub Actions"]
+            },
+            
+            cybersecurity: {
+                "🔒 Tools": ["Kali Linux", "Metasploit", "Wireshark"],
+                "🎯 Skills": ["Penetration Testing", "Vulnerability Assessment"],
+                "🛡️ Focus": ["Mobile Security", "Web Security"]
+            },
+            
+            tools: {
+                "💻 Development": ["Git", "VS Code", "Android Studio"],
+                "🧪 Testing": ["Postman", "Selenium", "JUnit"],
+                "🎨 Design": ["Figma", "Adobe XD"]
+            }
+        };
+        
+        this.currentlyLearning = [
+            "🤖 Advanced Android Architecture",
+            "🔥 Firebase Advanced Features", 
+            "🛠️ Custom Kali Tools Development",
+            "☁️ Cloud Security"
+        ];
+        
+        this.goals2024 = [
+            "📱 Launch 3 Android Apps",
+            "🏆 Contribute to 50+ Open Source Projects",
+            "📚 Master Kubernetes",
+            "🎯 Earn Security Certifications"
+        ];
+        
+        this.funFacts = [
+            "🐛 I debug with the passion of a detective solving mysteries",
+            "🔍 I find security vulnerabilities like Easter eggs",
+            "☕ Coffee is my debugging fuel",
+            "🌙 I code better at night when the world is quiet"
+        ];
+    }
+    
+    getCurrentStatus() {
+        return {
+            status: "🚀 Building the future, one app at a time",
+            motto: "💡 Secure code is not just a goal, it's a responsibility",
+            availability: "💬 Always open to collaborate on exciting projects!"
+        };
+    }
+    
+    getContactInfo() {
+        return {
+            email: "📧 mohamedasifappdev@gmail.com",
+            github: "🐙 @mohamedasif07",
+            portfolio: "🌐 Coming Soon...",
+            timezone: "🕒 UTC+5:30 (IST)"
+        };
+    }
+}
+
+// Initialize the awesome developer 🚀
+const mohamed = new MohamedAsif();
+console.log("Welcome to my digital world! 🌟");
+console.log(mohamed.getCurrentStatus());
+
+// Let's build something amazing together! 💫
 ```
+
+</div>
 
 <br clear="both">
 
