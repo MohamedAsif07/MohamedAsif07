@@ -282,7 +282,7 @@ hobbies: ["Coffee ☕", "Bug Bounty 🕵️", "Security Research 🔬"]
 <td align="center" width="200">
 
 ### 🌐 **Portfolio**
-🚧 Coming Soon...
+https://asifappdev.tech/
 
 </td>
 </tr>
