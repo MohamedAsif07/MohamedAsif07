@@ -152,7 +152,7 @@ hobbies: ["Coffee ☕", "Bug Bounty 🕵️", "Security Research 🔬"]
 
 ### 🔬 **Research & Development Focus**
 
-```yaml
+
 🚀 Active Projects:
   Mobile Security:
     - 📱 Advanced Android Security Framework
@@ -175,7 +175,7 @@ hobbies: ["Coffee ☕", "Bug Bounty 🕵️", "Security Research 🔬"]
   - ☁️ Zero Trust Architecture
   - 🤖 AI-Powered Threat Detection
   - 🔒 Advanced Cryptography
-```
+
 
 ## <div align="center">🏆 2024 Achievement Tracker</div>
 
