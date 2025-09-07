@@ -425,10 +425,10 @@
 </table>
 </div>
 
-## <div align="center">🏆 <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="40"> Mission Control Center</div>
+## <div align="center">🏆 <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="40"> Mission Control Center (Houston, We Have Problems)</div>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=transparent&color=gradient&customColorList=6,11,12,17,20&height=80&section=header&text=🎯%202024%20Strategic%20Objectives&fontSize=20&fontColor=00D4FF&animation=twinkling"/>
+  <img src="https://capsule-render.vercel.app/api?type=transparent&color=gradient&customColorList=6,11,12,17,20&height=80&section=header&text=🎯%202024%20Wildly%20Optimistic%20Goals&fontSize=20&fontColor=00D4FF&animation=twinkling"/>
 </div>
 
 <div align="center">
@@ -436,6 +436,39 @@
 <tr>
 <td align="center" width="25%">
   <img src="https://media.giphy.com/media/l3q2XhfQ8oCkm1Ts4/giphy.gif" width="120"><br>
+  <div style="background: linear-gradient(45deg, #00D4FF, #FF6B35); padding: 10px; border-radius: 10px;">
+    <strong>📱 5 Production Apps</strong><br>
+    <sub>Not counting "Hello World" apps</sub><br><br>
+    <img src="https://progress-bar.dev/40/?title=Procrastination%20Level&width=180&color=00D4FF&suffix=%20Complete"/>
+  </div>
+</td>
+<td align="center" width="25%">
+  <img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="120"><br>
+  <div style="background: linear-gradient(45deg, #7F52FF, #4EA94B); padding: 10px; border-radius: 10px;">
+    <strong>🌟 75+ Contributions</strong><br>
+    <sub>Making the world slightly better</sub><br><br>
+    <img src="https://progress-bar.dev/65/?title=Contribution%20Addiction&width=180&color=4EA94B&suffix=%20Achieved"/>
+  </div>
+</td>
+<td align="center" width="25%">
+  <img src="https://media.giphy.com/media/LaVp0AyqR5bGsC5Cbm/giphy.gif" width="120"><br>
+  <div style="background: linear-gradient(45deg, #FF6B35, #E10098); padding: 10px; border-radius: 10px;">
+    <strong>🏆 Security Certs</strong><br>
+    <sub>Collecting certificates like Pokemon</sub><br><br>
+    <img src="https://progress-bar.dev/30/?title=Brain%20Melting&width=180&color=FF6B35&suffix=%20In%20Progress"/>
+  </div>
+</td>
+<td align="center" width="25%">
+  <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="120"><br>
+  <div style="background: linear-gradient(45deg, #00D4FF, #7F52FF); padding: 10px; border-radius: 10px;">
+    <strong>👨‍🏫 20+ Mentees</strong><br>
+    <sub>Creating more coffee addicts</sub><br><br>
+    <img src="https://progress-bar.dev/55/?title=Caffeine%20Conversion&width=180&color=7F52FF&suffix=%20Active"/>
+  </div>
+</td>
+</tr>
+</table>
+</div><img src="https://media.giphy.com/media/l3q2XhfQ8oCkm1Ts4/giphy.gif" width="120"><br>
   <div style="background: linear-gradient(45deg, #00D4FF, #FF6B35); padding: 10px; border-radius: 10px;">
     <strong>📱 5 Production Apps</strong><br>
     <sub>Next-gen mobile solutions</sub><br><br>
