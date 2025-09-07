@@ -15,62 +15,81 @@
 <img align="right" alt="Coding" width="450" src="https://camo.githubusercontent.com/5ddf73ad3a205111cf8c686f687fc216c2946a75005718c8da5b837ad9de78c9/68747470733a2f2f7468756d62732e6766796361742e636f6d2f4576696c4e657874446576696c666973682d736d616c6c2e676966">
 
 <div align="center">
+## <div align="center">🎭 Who Am I?</div>
 
-### 🎭 **Who Am I?**
+<div align="center">
 
-🌟 **Name:** Mohamed Asif  
-🚀 **Role:** Android Developer & Cybersecurity Enthusiast  
-🌍 **Location:** Earth • Digital Realm  
-🙋 **Pronouns:** He / Him  
-✨ **Status:** Building the future, one app at a time  
+🌟 **Name:** `Mohamed Asif`  
+🚀 **Role:** `Android Developer & Cybersecurity Enthusiast`  
+🌍 **Location:** `Earth • Digital Realm`  
+🙋 **Pronouns:** `He / Him`  
+✨ **Status:** *Building the future, one app at a time*  
 
----
-
-### 🎯 **Current Mission**
-- 🔐 Crafting Secure Android Applications  
-- 🛡️ Developing Advanced Cybersecurity Tools  
-- 🌟 Contributing to Open Source Revolution  
-- 🎯 Mentoring Next-Gen Developers  
+</div>
 
 ---
 
-### 🧰 **Tech Arsenal**
-- 📱 **Mobile:** Java, Kotlin, XML, Jetpack Compose, Flutter, Dart  
-- ⚡ **Backend:** Python, Java, C/C++, Django, Spring Boot, FastAPI  
-- ☁️ **Cloud & DevOps:** AWS, Google Cloud, Docker, Kubernetes, Jenkins  
-- 🛡️ **Cybersecurity:** Kali Linux, Metasploit, Nmap, Wireshark, Burp Suite  
-- 🗄️ **Databases:** Firebase, MongoDB, PostgreSQL, MySQL, Redis  
+## <div align="center">🎯 Current Mission</div>
+
+✅ 🔐 Crafting **Secure Android Applications**  
+✅ 🛡️ Developing **Advanced Cybersecurity Tools**  
+✅ 🌟 Contributing to the **Open Source Revolution**  
+✅ 🎯 Mentoring **Next-Gen Developers**  
 
 ---
 
-### 📚 **Currently Learning**
-- 🤖 Advanced Android Architecture (MVVM, Clean Architecture)  
-- 🔥 Firebase ML Kit & Advanced Features  
-- 🛠️ Custom Kali Linux Tools Development  
-- ☁️ Cloud-Native Security & Zero Trust  
-- 🧠 Machine Learning for Cybersecurity  
-- 🌐 Web3 & Blockchain Security  
+## <div align="center">🧰 Tech Arsenal</div>
+
+<div align="center">
+
+| 📱 Mobile | ⚡ Backend | ☁️ Cloud & DevOps | 🛡️ Cybersecurity | 🗄️ Databases |
+|-----------|-----------|-------------------|------------------|--------------|
+| Java · Kotlin · XML · Jetpack Compose · Flutter · Dart | Python · Java · C/C++ · Django · Spring Boot · FastAPI | AWS · Google Cloud · Docker · Kubernetes · Jenkins | Kali Linux · Metasploit · Nmap · Wireshark · Burp Suite | Firebase · MongoDB · PostgreSQL · MySQL · Redis |
+
+</div>
 
 ---
 
-### 🏆 **Achievements Roadmap (2024)**
-- 📱 Launch 5 Production Android Apps  
-- 🏆 Contribute to 75+ Open Source Projects  
-- 🎓 Earn Advanced Security Certifications  
-- 📚 Master Kubernetes & Service Mesh  
-- 🎯 Mentor 20+ Junior Developers  
-- 💡 Publish Security Research Papers  
+## <div align="center">📚 Currently Learning</div>
+
+🚀 **Advanced Android Architecture** (MVVM, Clean Architecture)  
+🔥 **Firebase ML Kit & AI-Powered Features**  
+🛠️ **Custom Kali Linux Security Tools**  
+☁️ **Cloud-Native Security & Zero Trust**  
+🧠 **Machine Learning for Cybersecurity**  
+🌐 **Web3 & Blockchain Security**  
 
 ---
 
-### 🌙 **Fun Facts About Me**
-- 🕵️ Debug with the precision of Sherlock Holmes  
-- 🎯 Hunt vulnerabilities like a digital bounty hunter  
-- ☕ Coffee = Midnight Coding Fuel  
-- 🚀 Believe secure code isn’t just practice—it’s **art**  
-- 💡 Every bug is a puzzle waiting to be solved  
+## <div align="center">🏆 Achievements Roadmap (2024)</div>
+
+- 📱 Launch **5 Production Android Apps**  
+- 🏆 Contribute to **75+ Open Source Projects**  
+- 🎓 Earn **Advanced Security Certifications**  
+- 📚 Master **Kubernetes & Service Mesh**  
+- 🎯 Mentor **20+ Junior Developers**  
+- 💡 Publish **Security Research Papers**  
 
 ---
+
+## <div align="center">🌙 Fun Facts About Me</div>
+
+✨ 🕵️ Debug with the **precision of Sherlock Holmes**  
+✨ 🎯 Hunt vulnerabilities like a **digital bounty hunter**  
+✨ ☕ Coffee = **Midnight Coding Fuel**  
+✨ 🚀 Secure code isn’t just practice — it’s **art**  
+✨ 💡 Every bug = **a puzzle waiting to be solved**  
+
+---
+
+## <div align="center">💫 Motto</div>
+
+<div align="center">
+
+**“Code with purpose, secure with passion, innovate with impact!”** 🚀  
+
+</div>
+
 
 💫 **Motto:** *Code with purpose, secure with passion, innovate with impact!*
 
