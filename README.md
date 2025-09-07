@@ -16,7 +16,7 @@
 
 <div align="left">
 
-```yaml
+
 name: Mohamed Asif
 located_in: Earth, Digital Realm 🌍
 current_job: Android Developer & Cybersecurity Expert
@@ -48,7 +48,7 @@ currently_learning:
   - "Mentor 20+ Developers 👨‍🏫"
 
 hobbies: ["Coffee ☕", "Bug Bounty 🕵️", "Security Research 🔬"]
-```
+
 
 </div>
 
