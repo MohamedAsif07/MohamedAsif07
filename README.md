@@ -18,128 +18,62 @@
 
 ### 🎭 **Who Am I?**
 
-```javascript
-class MohamedAsif {
-    constructor() {
-        this.profile = {
-            name: "Mohamed Asif",
-            role: "🚀 Android Developer & 🛡️ Cybersecurity Enthusiast",
-            location: "🌍 Earth • 🏙️ Digital Realm",
-            pronouns: ["He", "Him"],
-            status: "💫 Building the future, one app at a time"
-        };
-        
-        this.currentMission = [
-            "🔐 Crafting Secure Android Applications",
-            "🛡️ Developing Advanced Cybersecurity Tools", 
-            "🌟 Contributing to Open Source Revolution",
-            "🎯 Mentoring Next-Gen Developers"
-        ];
-        
-        this.codeArsenal = {
-            mobile: {
-                "📱 Native Android": ["☕ Java", "🟣 Kotlin", "🎨 XML", "🚀 Jetpack Compose"],
-                "🦋 Cross-Platform": ["🎯 Dart", "💙 Flutter", "📐 Material Design"]
-            },
-            
-            backend: {
-                "⚡ Languages": ["🐍 Python", "☕ Java", "⚙️ C/C++"],
-                "🏗️ Frameworks": ["🌿 Spring Boot", "🔥 Django", "⚡ FastAPI", "🌪️ Flask"],
-                "📦 Build Tools": ["🐘 Gradle", "📋 Maven", "🔧 CMake"]
-            },
-            
-            cloudNative: {
-                "☁️ Platforms": ["🔶 AWS", "🔵 Google Cloud", "🟦 Azure"],
-                "🐳 Containerization": ["🐋 Docker", "☸️ Kubernetes", "🔄 Docker Compose"],
-                "🚀 CI/CD": ["🏗️ Jenkins", "⚙️ GitHub Actions", "🔄 GitLab CI"]
-            },
-            
-            cybersecurity: {
-                "🛡️ Offensive": ["🐉 Kali Linux", "💥 Metasploit", "🔍 Nmap", "🦈 Wireshark"],
-                "🔒 Defensive": ["🛡️ OWASP", "🔐 Burp Suite", "🕵️ Penetration Testing"],
-                "🎯 Specialization": ["📱 Mobile Security", "🌐 Web App Security", "🔗 API Security"]
-            },
-            
-            databases: {
-                "🔥 NoSQL": ["🍃 MongoDB", "🔥 Firebase", "📊 DynamoDB"],
-                "🗄️ SQL": ["🐬 MySQL", "🐘 PostgreSQL", "💎 SQLite"],
-                "⚡ Cache": ["🚀 Redis", "⚡ Memcached"]
-            },
-            
-            tools: {
-                "💻 IDEs": ["🤖 Android Studio", "💙 VS Code", "💡 IntelliJ IDEA"],
-                "🧪 Testing": ["🧪 Postman", "🔍 Selenium", "✅ JUnit", "🎯 Mockito"],
-                "🎨 Design": ["🎨 Figma", "✨ Adobe XD", "🖌️ Sketch"]
-            }
-        };
-        
-        this.currentLearning = [
-            "🤖 Advanced Android Architecture (MVVM, Clean Architecture)",
-            "🔥 Firebase ML Kit & Advanced Features",
-            "🛠️ Custom Kali Linux Tools Development",
-            "☁️ Cloud-Native Security & Zero Trust Architecture",
-            "🧠 Machine Learning for Cybersecurity",
-            "🌐 Web3 & Blockchain Security"
-        ];
-        
-        this.achievements2024 = [
-            "📱 Launch 5 Production Android Apps",
-            "🏆 Contribute to 75+ Open Source Projects",
-            "🎓 Earn Advanced Security Certifications",
-            "📚 Master Kubernetes & Service Mesh",
-            "🎯 Mentor 20+ Junior Developers",
-            "💡 Publish Security Research Papers"
-        ];
-        
-        this.personalityCore = [
-            "🕵️ I debug with the precision of Sherlock Holmes",
-            "🎯 I hunt vulnerabilities like a digital bounty hunter",
-            "☕ Coffee is the fuel that powers my midnight coding sessions",
-            "🌙 My best code emerges when the world sleeps",
-            "🚀 I believe secure code isn't just good practice—it's art",
-            "💡 Every bug is a puzzle waiting to be solved"
-        ];
-        
-        this.motto = "💫 Code with purpose, secure with passion, innovate with impact!";
-    }
-    
-    getCurrentStatus() {
-        const status = {
-            🚀: "Building next-generation secure mobile applications",
-            🛡️: "Researching advanced cybersecurity methodologies", 
-            💼: "Open for exciting collaboration opportunities",
-            📚: "Always learning, always evolving",
-            🎯: "Focused on making the digital world safer"
-        };
-        
-        return status;
-    }
-    
-    getContactPortal() {
-        return {
-            "📧 Email": "mohamedasifappdev@gmail.com",
-            "🐙 GitHub": "@mohamedasif07",
-            "🌐 Portfolio": "🚧 Crafting something extraordinary...",
-            "⏰ Timezone": "UTC+5:30 (IST)",
-            "💬 Status": "Always ready to discuss innovative projects!"
-        };
-    }
-    
-    executeWelcomeSequence() {
-        console.log("🌟 ================================ 🌟");
-        console.log("   Welcome to Mohamed Asif's Digital Universe!");
-        console.log("🌟 ================================ 🌟");
-        console.log(this.getCurrentStatus());
-        console.log("✨ Let's build something extraordinary together! ✨");
-    }
-}
+🌟 **Name:** Mohamed Asif  
+🚀 **Role:** Android Developer & Cybersecurity Enthusiast  
+🌍 **Location:** Earth • Digital Realm  
+🙋 **Pronouns:** He / Him  
+✨ **Status:** Building the future, one app at a time  
 
-// 🚀 Initialize the Digital Architect
-const mohamed = new MohamedAsif();
-mohamed.executeWelcomeSequence();
+---
 
-// 💫 Ready to revolutionize the digital world!
-```
+### 🎯 **Current Mission**
+- 🔐 Crafting Secure Android Applications  
+- 🛡️ Developing Advanced Cybersecurity Tools  
+- 🌟 Contributing to Open Source Revolution  
+- 🎯 Mentoring Next-Gen Developers  
+
+---
+
+### 🧰 **Tech Arsenal**
+- 📱 **Mobile:** Java, Kotlin, XML, Jetpack Compose, Flutter, Dart  
+- ⚡ **Backend:** Python, Java, C/C++, Django, Spring Boot, FastAPI  
+- ☁️ **Cloud & DevOps:** AWS, Google Cloud, Docker, Kubernetes, Jenkins  
+- 🛡️ **Cybersecurity:** Kali Linux, Metasploit, Nmap, Wireshark, Burp Suite  
+- 🗄️ **Databases:** Firebase, MongoDB, PostgreSQL, MySQL, Redis  
+
+---
+
+### 📚 **Currently Learning**
+- 🤖 Advanced Android Architecture (MVVM, Clean Architecture)  
+- 🔥 Firebase ML Kit & Advanced Features  
+- 🛠️ Custom Kali Linux Tools Development  
+- ☁️ Cloud-Native Security & Zero Trust  
+- 🧠 Machine Learning for Cybersecurity  
+- 🌐 Web3 & Blockchain Security  
+
+---
+
+### 🏆 **Achievements Roadmap (2024)**
+- 📱 Launch 5 Production Android Apps  
+- 🏆 Contribute to 75+ Open Source Projects  
+- 🎓 Earn Advanced Security Certifications  
+- 📚 Master Kubernetes & Service Mesh  
+- 🎯 Mentor 20+ Junior Developers  
+- 💡 Publish Security Research Papers  
+
+---
+
+### 🌙 **Fun Facts About Me**
+- 🕵️ Debug with the precision of Sherlock Holmes  
+- 🎯 Hunt vulnerabilities like a digital bounty hunter  
+- ☕ Coffee = Midnight Coding Fuel  
+- 🚀 Believe secure code isn’t just practice—it’s **art**  
+- 💡 Every bug is a puzzle waiting to be solved  
+
+---
+
+💫 **Motto:** *Code with purpose, secure with passion, innovate with impact!*
+
 
 </div>
 
